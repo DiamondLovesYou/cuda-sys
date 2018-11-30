@@ -5,4 +5,4 @@
 
 use vector_types::dim3;
 
-include!(concat!(env!("OUT_DIR"), "/driver_types_bindings.rs"));
+include!("bindings/driver_types_bindings.rs");

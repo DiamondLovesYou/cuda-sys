@@ -4,4 +4,4 @@
 
 use vector_types::*;
 
-include!(concat!(env!("OUT_DIR"), "/cucomplex_bindings.rs"));
+include!("bindings/cucomplex_bindings.rs");

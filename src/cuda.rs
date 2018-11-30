@@ -4,4 +4,7 @@
 
 pub use driver_types::cudaError_t;
 
-include!(concat!(env!("OUT_DIR"), "/cuda_bindings.rs"));
+pub(crate) static LIBRARY: super::GlobalLibrary = super::GlobalLibrary::new();
+
+include!("bindings/cuda_bindings.rs");
+include!("bindings/cuda_bindings_fns.rs");

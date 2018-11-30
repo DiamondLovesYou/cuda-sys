@@ -7,4 +7,7 @@ use library_types::*;
 use cudart::*;
 pub use cudart::cudaDataType;
 
-include!(concat!(env!("OUT_DIR"), "/cublas_bindings.rs"));
+static LIBRARY: super::GlobalLibrary = super::GlobalLibrary::new();
+
+include!("bindings/cublas_bindings.rs");
+include!("bindings/cublas_bindings_fns.rs");

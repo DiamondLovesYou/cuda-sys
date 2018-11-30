@@ -1,0 +1,11 @@
+
+[package]
+name = "cuda-bindgen"
+version = "0.1.0"
+authors = ["Richard Diamond <wichard@vitalitystudios.com>"]
+
+[build-dependencies]
+bindgen = "~0.43"
+
+[bin]
+path = "build.rs"
